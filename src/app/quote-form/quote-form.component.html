@@ -1,7 +1,9 @@
-<button  class="btn btn-warning"(click)='quoteInfo()'>Add Quote</button>
+<button  class="btn btn-success"(click)='quoteInfo()'>Add Quote</button>
 <div *ngIf="showQuote">
 <h2>Quote form</h2>
-<div class="container-fluid">
+
+<div class="container-fluid" class="jumbotron">
+  <form (ngSubmit)='submitQuote()'>
   <div class="form-group">
     <label for="firstname">FirstName</label>
     <input type ="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name">
@@ -14,12 +16,13 @@
       <label for="date">Date</label>
       <input type="date" class="form-control" [(ngModel)]="newQuote.date" name="date">
     </div>
+    <button class="btn btn-success" type="submit">Create Quote</button>
+  </form>
 </div>
 </div>
+
 <!--p *ngFor='let quote of quotes'>{{quote.quote}}</p>
 <div *ngFor='let quote of quotes'>
 <app-quote-details [quote]='quote'></app-quote-details>
 </div-->
 {{newQuote.name}}
-{{newQuote.quote}}
-{{newQuote.date}}
