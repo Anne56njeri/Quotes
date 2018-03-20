@@ -1,5 +1,6 @@
 # Quotes
-##Author name:
+
+##Author name
 Maryanne Njeri
 
 
