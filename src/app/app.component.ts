@@ -8,6 +8,7 @@ import{Quotes} from './items'
 })
 export class AppComponent {
 
+  
   quotes = [
     new Quotes ("Mart Damon","Life is what happenswhen your busy making plans","18/2/1990")
     ]

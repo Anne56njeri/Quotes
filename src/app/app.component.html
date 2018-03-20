@@ -4,13 +4,14 @@
     Welcome to the  Quotes!
   </h1>
 </div>
+
 <br>
 <div class="container" class="bing">
 <div *ngFor='let quote of quotes' >
 <h3>{{quote.name}}</h3>
 <h3>{{quote.quote}}</h3>
 <h3>{{quote.date}}</h3>
-
+<button class="btn btn-success" (click)= 'quoteDelete(true)' >Delete Quote</button>
 <hr>
 </div>
 
@@ -18,3 +19,4 @@
 <br>
 
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>

@@ -20,6 +20,7 @@ quoteInfo(){
   this.showQuote= !this.showQuote;
 }
 
+
   constructor() {
   this.showQuote= false }
 
