@@ -1,6 +1,7 @@
 # Quotes
+ An application created using angular
 
-##Author name
+## Author name
 Maryanne Njeri
 
 
@@ -12,7 +13,7 @@ The user is also able to delete the quote
 
 ## Project setup instructions:
 To access the project the click the link below
-https://github.com/Anne56njeri/Quotes
+ https://anne56njeri.github.io/Quotes/
 
 
 
