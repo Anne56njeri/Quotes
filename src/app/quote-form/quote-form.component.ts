@@ -8,8 +8,10 @@ import { Quotes} from '../items'
 export class QuoteFormComponent implements OnInit {
 public showQuote: boolean;
 
-newQuote=new Quotes('','','');
+newQuote=new Quotes( 0,'','','');
 @Output() addQuote=new EventEmitter<Quotes>();
+
+
 
 submitQuote(){
   this.addQuote.emit(this.newQuote);
