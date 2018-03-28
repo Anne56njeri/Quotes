@@ -12,6 +12,9 @@
 <h3>{{quote.quote}}</h3>
 <h3>{{quote.date}}</h3>
 <button class="btn btn-success" (click)= 'quoteDelete()' >Delete Quote</button>
+<button class="btn btn-success" (click)='upVote()'>UpVote {{up}}</button>
+<button class="btn btn-success" (click)='downVote()'>DownVote {{down}}</button>
+
 <hr>
 </div>
 
